@@ -82,12 +82,11 @@ padding: 0px;
 	width: 150px;
 	height: 100%;
 	line-height: 50px;
+	transition: all 0.5s;
 }
 
 #menu ul li:hover{
-	color: #FAFEFF;
-	background-color: #B7D8DF;
-#menu nav {
-	margin-right: auto;
-	margin-left: auto;
+	box-shadow: 0 2px 0 black;
+	text-shadow: 0 2px 4px grey;
+	transition: all 0.5s;
 }
