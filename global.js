@@ -4,13 +4,17 @@ var menu = document.getElementById("menu");
 var logoDiv = document.getElementById("logo");
 
 document.addEventListener("scroll", function() {
-	if (menu.getBoundingClientRect().top < 0
-	&& menu.style.position != "fixed") {
+	const menuRect = menu.getBoundingClientRect();
+	const logoRect = logoDiv.getBoundingClientRect();
+	if (menuRect.top < 0 && menu.style.position != "fixed")
+	{
 		menu.style.position = "fixed";
 		menu.style.top = "0";
 		menu.style.left = "0";
-	} else if (logoDiv.getBoundingClientRect().bottom > 0
-	&& menu.style.position == "fixed") {
+	}
+	else if (logoRect.bottom > menuRect.height
+		&& menu.style.position == "fixed")
+	{
 		menu.style.position = "initial";
 	};
 });

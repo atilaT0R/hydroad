@@ -1,8 +1,11 @@
 'use strict';
 
-var position = {lat: 39.8779614, lng: -3.9447705};
+var position = {
+	lat: 39.8779614,
+	lng: -3.9447705
+};
 
-var mapOptions = {	
+var mapOptions = {
 	center: position,
 	zoom: 15,
 	mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -17,4 +20,3 @@ var markerOptions = {
 };
 
 var market = new google.maps.Marker(markerOptions);
-
