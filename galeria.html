@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hydroad</title>
+  <link href="global.css" rel="stylesheet" type="text/css">
+  <link href="home.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  div.c1 {margin-left: 2em}
+  </style>
+</head>
+<body>
+  {% include header.html %}
+  <div id="container">
+    {% for image in site.images %}
+      {% if image.extname == 'png' %}
+        <img src="{{ image.url }}" />
+      {% endif %}
+    {% endfor %}
+  </div>
+</body>
+</html>
