@@ -4,19 +4,41 @@
   <meta charset="utf-8">
   <title>Hydroad</title>
   <link href="global.css" rel="stylesheet" type="text/css">
-  <link href="home.css" rel="stylesheet" type="text/css">
   <style type="text/css">
   div.c1 {margin-left: 2em}
   </style>
 </head>
 <body>
-  {% include header.html %}
+  <header>
+    <div id="logo"><img src="img/logo.png" /></div>
+    <div id="menu">
+      <nav>
+        <div class="c1">
+          <ul>
+            <a href="home.html"><li>Inicio</li></a>
+            <a href="conocenos.html"><li>Conócenos</li></a>
+            <a href="laminas.html#"><li>Láminas</li></a>
+            <a href="galeria.html"><li>Galería</li></a>
+          </ul></a>
+        </div>
+      </nav>
+    </div>
+  </header>
   <div id="container">
-    {% for image in site.images %}
-      {% if image.extname == 'png' %}
-        <img src="{{ image.url }}" />
-      {% endif %}
-    {% endfor %}
+    <div id="foto">
+	    <img></img>
+    </div>
+    <div class="CB"></div>
   </div>
+  <footer>
+    <div id="partner"></div>
+    <div id="final">
+      <br>
+      Correo electronico: hydroad@hotmail.es<br>
+      Teléfono: 659 531 857 | 627 961 217<br>
+    </div>
+  </footer>
+  <script src="global.js">
+  </script>
 </body>
 </html>
