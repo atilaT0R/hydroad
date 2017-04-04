@@ -3,15 +3,13 @@
 body {
 	margin: 0;
 	background: #2D2D2D url("img/pattern.png") repeat;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 #container {
-	max-width: 1200px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 10%;
 	background-color: #F9FFFF;
 	box-shadow: 0px 5px 15px #888888;
-	font-family: Verdana, Geneva, sans-serif;
 	font-size: 24px;
 }
 #container img {
