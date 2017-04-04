@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 body{
-	background-color: #010101;
+	margin: 0;
+	background: #2D2D2D url("img/pattern.png") repeat;
 }
 
 #container {
@@ -14,7 +15,6 @@ body{
 	font-size: 24px;
 }
 #container img {
-	padding: 20px;
 	float: right;
 	height: 250px;
 }
@@ -23,9 +23,12 @@ body{
 	clear: both;
 }
 #logo img {
-	height: 300px;
-	width: 800px;
-
+	position: relative;
+	width: 90%;
+	max-width: 400px;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 84px;
 }
 
 
@@ -42,10 +45,9 @@ body{
 
 
 #logo {
-	text-align: center;
+	/*! text-align: center; */
 	margin: 0px;
-	height: 300px;
-	background-image: url(img/pattern.png);
+	height: 128px;
 	background-repeat: repeat;
 }
 #menu {
