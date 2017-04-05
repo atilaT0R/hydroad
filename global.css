@@ -94,22 +94,6 @@ padding: 0px;
 	text-shadow: 0 2px 4px grey;
 	transition: all 0.5s;
 }
-#lamina {
-	float: left;
-	padding-left: 15px;
-	padding-top: 15px;
-}
-
-#lamina img {
-    display: block;
-    transition: all 1s;
-	height: 218px;
-}
-
-#lamina img:hover {
-	box-shadow: 0 6px 24px -6px rgba(0, 0, 0, .7);
-	height: 100%;
-}
 
 #map {
 	width: 100%; height: 386px;

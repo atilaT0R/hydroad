@@ -1,0 +1,19 @@
+#container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.picture {
+	margin: 8px;
+	transition: all 1s;
+}
+.picture:hover {
+	box-shadow: 0 6px 24px -6px rgba(0, 0, 0, .7);
+}
+
+.picture img {
+	display: block;
+	height: 218px;
+}
