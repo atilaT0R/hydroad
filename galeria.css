@@ -6,8 +6,10 @@
 }
 
 .picture {
-	margin: 8px;
+	margin: 8px;	
+	height: 218px;
 	transition: all 1s;
+	cursor: pointer;
 }
 .picture:hover {
 	box-shadow: 0 6px 24px -6px rgba(0, 0, 0, .7);
@@ -15,5 +17,18 @@
 
 .picture img {
 	display: block;
-	height: 218px;
+	height: 100% !important;
+	transition: all .5s ease-in-out;
+}
+
+.bg {
+	width: 100vw; height: 100vh;
+	margin: 0;
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 3;
+	opacity: 0;
+	background: black;
+	transition: all .7s ease-in-out;
+	cursor: pointer;
 }
